@@ -395,3 +395,135 @@ ul { margin: 0; padding-left: 18px; }
   .proof__grid { grid-template-columns: repeat(2, 1fr); }
   .nav__links { display: none; }
 }
+
+/* ============================
+   BLUE CURRENT 2.0 – PHASE 2 PATCH
+   Paste at the BOTTOM of styles.css
+============================ */
+
+/* Improve overall reading rhythm */
+p { line-height: 1.65; }
+.tile p, .card__text, .lead { line-height: 1.65; }
+
+/* Make sections feel more premium + separated */
+.section__head p.muted { max-width: 70ch; }
+
+/* Slightly stronger headings without changing your brand */
+h2 { font-size: clamp(24px, 2.6vw, 30px); }
+.tile h3 { letter-spacing: -0.1px; }
+
+/* Cards + tiles: subtle lift + better border contrast */
+.card,
+.tile,
+.step,
+.form {
+  position: relative;
+  overflow: hidden;
+}
+
+.tile,
+.step,
+.form,
+.hero__card .card,
+.card--tight {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Hover polish (feels more “alive”) */
+.tile:hover,
+.step:hover,
+.hero__card .card:hover,
+.form:hover {
+  transform: translateY(-2px);
+  transition: transform 180ms ease, filter 180ms ease, border-color 180ms ease;
+  border-color: rgba(43, 188, 255, 0.28);
+  filter: brightness(1.03);
+}
+
+/* Prevent hover jump on mobile */
+@media (hover: none) {
+  .tile:hover,
+  .step:hover,
+  .hero__card .card:hover,
+  .form:hover { transform: none; filter: none; }
+}
+
+/* Make proof grid handle longer text (like outcomes strip) */
+.proof__item {
+  line-height: 1.25;
+}
+.proof__item strong {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.proof__item span.muted {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* CTA card inside section (the big “Want more calls this month?”) */
+.section .card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(
+      135deg,
+      rgba(43, 188, 255, 0.10),
+      rgba(47, 227, 197, 0.06)
+    ),
+    rgba(255, 255, 255, 0.04);
+}
+
+/* Checklist + bullets: tighter + cleaner */
+.bullets,
+.checklist {
+  margin-top: 10px;
+}
+.bullets li,
+.checklist li {
+  margin-bottom: 7px;
+}
+
+/* Buttons: disabled state for Stripe placeholders */
+.btn[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.55;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+
+/* Form inputs: slightly better contrast */
+input,
+textarea {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgba(234, 240, 255, 0.45);
+}
+
+/* Nav links on desktop: a tiny bit more “clickable” */
+.nav__links a {
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.nav__links a:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Better spacing for “steps” section */
+.steps { gap: 14px; }
+.step p { max-width: 72ch; }
+
+/* Better balance on mobile: hero padding */
+@media (max-width: 980px) {
+  .hero { padding: 44px 0 16px; }
+  h1 { max-width: 26ch; }
+  .subhead { font-size: 16px; }
+}
+
+/* Optional: reduce heavy shadow so it feels less “glowy” and more premium */
+:root {
+  --shadow: 0 16px 46px rgba(0, 0, 0, 0.32);
+}
