@@ -23,14 +23,36 @@
           </span>
         </a>
 
+        <!-- Desktop links -->
         <nav class="nav__links" aria-label="Primary navigation">
           <a href="#services">Services</a>
           <a href="#how">How it works</a>
-          <a href="#proof">Proof</a>
           <a href="#about">About</a>
           <a href="#pay">Pay</a>
           <a href="#contact" class="btn btn--small">Free Review</a>
         </nav>
+
+        <!-- Mobile menu button -->
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobileNav"
+          aria-expanded="false"
+        >
+          <span class="nav__toggleBars" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div class="nav__mobile" id="mobileNav" hidden>
+        <div class="container nav__mobileInner">
+          <a href="#services" class="nav__mobileLink">Services</a>
+          <a href="#how" class="nav__mobileLink">How it works</a>
+          <a href="#about" class="nav__mobileLink">About</a>
+          <a href="#pay" class="nav__mobileLink">Pay</a>
+          <a href="#contact" class="btn btn--full">Free Review</a>
+        </div>
       </div>
     </header>
 
@@ -89,23 +111,33 @@
       <!-- OUTCOMES STRIP -->
       <section class="proof">
         <div class="container proof__inner">
-          <p class="proof__title">
-            Simple systems. Real outcomes. Built to match the quality of your work.
-          </p>
+          <p class="proof__title">Simple systems. Real outcomes. Built to match the quality of your work.</p>
 
           <div class="proof__grid">
-            <div class="proof__item"><strong>More calls</strong><br /><span class="muted">Clear CTA + contact path</span></div>
-            <div class="proof__item"><strong>More trust</strong><br /><span class="muted">Proof + consistency + clarity</span></div>
-            <div class="proof__item"><strong>Faster replies</strong><br /><span class="muted">Basic follow-up setup</span></div>
-            <div class="proof__item"><strong>Better jobs</strong><br /><span class="muted">Messaging that attracts the right work</span></div>
-            <div class="proof__item"><strong>Clean handoff</strong><br /><span class="muted">You own everything</span></div>
-            <div class="proof__item"><strong>No fluff</strong><br /><span class="muted">Practical improvements, fast</span></div>
+            <div class="proof__item">
+              <strong>More calls</strong><br /><span class="muted">Clear CTA + contact path</span>
+            </div>
+            <div class="proof__item">
+              <strong>More trust</strong><br /><span class="muted">Proof + consistency + clarity</span>
+            </div>
+            <div class="proof__item">
+              <strong>Faster replies</strong><br /><span class="muted">Basic follow-up setup</span>
+            </div>
+            <div class="proof__item">
+              <strong>Better jobs</strong><br /><span class="muted">Attract the right work</span>
+            </div>
+            <div class="proof__item">
+              <strong>Clean handoff</strong><br /><span class="muted">You own everything</span>
+            </div>
+            <div class="proof__item">
+              <strong>No fluff</strong><br /><span class="muted">Practical improvements</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- INDUSTRIES -->
-      <section class="proof" id="proof">
+      <!-- INDUSTRIES / PROOF -->
+      <section class="proof">
         <div class="container proof__inner">
           <p class="proof__title">Designed for contractors who want simple systems, not marketing noise.</p>
           <div class="proof__grid">
@@ -179,21 +211,15 @@
           <div class="grid">
             <article class="tile">
               <h3>“Make my site feel legit.”</h3>
-              <p class="muted">
-                Better hero copy, proof section, cleaner service layout, and stronger trust signals.
-              </p>
+              <p class="muted">Better hero copy, proof section, cleaner service layout, and stronger trust signals.</p>
             </article>
             <article class="tile">
               <h3>“People aren’t filling out the form.”</h3>
-              <p class="muted">
-                Fix CTA placement, shorten the path, and set up follow-up so leads don’t go cold.
-              </p>
+              <p class="muted">Fix CTA placement, shorten the path, and set up follow-up so leads don’t go cold.</p>
             </article>
             <article class="tile">
               <h3>“I get traffic, but not calls.”</h3>
-              <p class="muted">
-                Improve clarity, tighten services, and make calling/texting the easiest action on mobile.
-              </p>
+              <p class="muted">Improve clarity and make calling/texting the easiest action on mobile.</p>
             </article>
           </div>
         </div>
@@ -235,7 +261,7 @@
         </div>
       </section>
 
-      <!-- RECENT BUILDS / FIXES (AUTHORITY PROOF) -->
+      <!-- RECENT BUILDS / FIXES -->
       <section class="section">
         <div class="container">
           <div class="section__head">
@@ -247,10 +273,8 @@
 
           <div class="grid">
             <article class="tile">
-              <h3>Full-stack app build + auth</h3>
-              <p>
-                Built a production-ready app with login/signup, protected routes, and secure API calls using JWT.
-              </p>
+              <h3>Secure login + protected routes</h3>
+              <p>Built production-ready authentication and protected pages using JWT with clean, stable UI flow.</p>
               <ul class="bullets">
                 <li>JWT auth + protected endpoints</li>
                 <li>Clean UI + responsive layout</li>
@@ -261,9 +285,7 @@
 
             <article class="tile">
               <h3>Deployment + HTTPS cleanup</h3>
-              <p>
-                Fixed domain + DNS issues, stabilized deployments, and cleaned up SSL/hosting configuration.
-              </p>
+              <p>Fixed domain/DNS issues and stabilized SSL/hosting configuration for a reliable live site.</p>
               <ul class="bullets">
                 <li>Domain + DNS troubleshooting</li>
                 <li>HTTPS / certificate fixes</li>
@@ -274,9 +296,7 @@
 
             <article class="tile">
               <h3>Conversion-focused website refresh</h3>
-              <p>
-                Improved layout, messaging clarity, and contact flow so visitors understand services and take action.
-              </p>
+              <p>Improved layout, clarity, and contact flow so visitors understand services and take action.</p>
               <ul class="bullets">
                 <li>Hero + CTA rewrite</li>
                 <li>Trust signals + proof added</li>
@@ -287,7 +307,7 @@
           </div>
 
           <p class="tiny muted" style="margin-top: 1rem">
-            Want yours in this section? After we finish your project, I can add a short before/after summary (with your permission).
+            After we finish your project, I can add a short before/after summary (with your permission).
           </p>
         </div>
       </section>
@@ -337,7 +357,7 @@
         </div>
       </section>
 
-      <!-- FAQ (OBJECTION HANDLER) -->
+      <!-- FAQ -->
       <section class="section section--muted">
         <div class="container">
           <div class="section__head">
@@ -363,15 +383,13 @@
 
             <article class="tile">
               <h3>Do I own the site and content?</h3>
-              <p class="muted">
-                Yes. You keep full ownership. No “held hostage” setups. Clean handoff every time.
-              </p>
+              <p class="muted">Yes. You keep full ownership. Clean handoff every time.</p>
             </article>
 
             <article class="tile">
-              <h3>Do you do ongoing monthly retainers?</h3>
+              <h3>Do you do monthly retainers?</h3>
               <p class="muted">
-                Not required. Most work is done as a clear project. If you want ongoing help later, we can do that—but only if it makes sense.
+                Not required. Most work is done as a clear project. If you want ongoing help later, we can do that—only if it makes sense.
               </p>
             </article>
 
@@ -441,10 +459,16 @@
               <p class="tiny muted">Link goes live when Stripe is connected.</p>
             </article>
           </div>
+
+          <p class="tiny muted" style="margin-top: 12px;">
+            Prefer ACH? Pay via Mercury — email
+            <a href="mailto:keith@bluecurrentco.com?subject=ACH%20Payment%20(Mercury)">keith@bluecurrentco.com</a>
+            and I’ll send an invoice.
+          </p>
         </div>
       </section>
 
-      <!-- STRONG CTA SECTION -->
+      <!-- STRONG CTA -->
       <section class="section">
         <div class="container">
           <div class="card" style="padding: 2rem">
@@ -484,6 +508,7 @@
             <!-- Netlify Forms -->
             <form class="form" name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="subject" value="Blue Current Co – Free Website Review" />
 
               <label>
                 Name
@@ -526,12 +551,45 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div>© <span id="year"></span> Blue Current Co.</div>
-        <div class="footer__right">In honor of “Smiling Ed & Madilyn Slocum.”</div>
+        <div class="footer__right">In honor of “Smiling Ed & Madelyn Slocum.”</div>
       </div>
     </footer>
 
     <script>
+      // Year
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Clean mobile nav toggle
+      const btn = document.querySelector(".nav__toggle");
+      const panel = document.getElementById("mobileNav");
+
+      if (btn && panel) {
+        const close = () => {
+          btn.setAttribute("aria-expanded", "false");
+          btn.setAttribute("aria-label", "Open menu");
+          panel.hidden = true;
+        };
+        const open = () => {
+          btn.setAttribute("aria-expanded", "true");
+          btn.setAttribute("aria-label", "Close menu");
+          panel.hidden = false;
+        };
+
+        btn.addEventListener("click", () => {
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+          expanded ? close() : open();
+        });
+
+        // Close after clicking a link
+        panel.addEventListener("click", (e) => {
+          if (e.target && e.target.matches("a")) close();
+        });
+
+        // Close with Esc
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") close();
+        });
+      }
     </script>
   </body>
 </html>
