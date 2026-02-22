@@ -285,11 +285,9 @@ h2 { margin: 0; font-size: clamp(24px, 2.6vw, 30px); letter-spacing: -0.2px; }
 .lead { margin: 0; color: rgba(234, 240, 255, 0.82); max-width: 80ch; }
 .muted { color: var(--muted); }
 
-/* Proof sections
-   Small polish: keeps stacked proof blocks from feeling too tall */
+/* Proof sections */
 .proof { padding: 18px 0 0; }
 .proof + .proof { padding-top: 10px; }
-
 .proof__inner { border-top: 1px solid var(--line); padding-top: 18px; }
 .proof__title { margin: 0 0 12px; color: var(--muted); }
 
