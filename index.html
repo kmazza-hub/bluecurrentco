@@ -3,221 +3,275 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blue Current Co | AI Revenue Systems for Service Businesses</title>
+    <title>Blue Current Co — Contractor Revenue Systems</title>
     <meta
       name="description"
-      content="We install AI revenue systems for service businesses: missed call text-back, lead follow-up automation, review automation, and CRM pipeline tracking."
+      content="Stop losing leads. Start booking more jobs. Blue Current Co installs missed-call + follow-up systems for contractors, carpenters, and handymen."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <!-- NAV -->
+    <!-- ===== NAV ===== -->
     <header class="nav">
       <div class="container nav__inner">
-        <a class="brand" href="/">
-          <span class="brand__mark" aria-hidden="true">BC</span>
-          <span class="brand__text">
-            <span class="brand__name">Blue Current Co</span>
-            <span class="brand__tag">AI Revenue Systems</span>
-          </span>
+        <a class="brand" href="#top" aria-label="Blue Current Co">
+          <div class="brand__mark" aria-hidden="true">BC</div>
+          <div class="brand__text">
+            <div class="brand__name">Blue Current Co</div>
+            <div class="brand__tag">Contractor Revenue Systems</div>
+          </div>
         </a>
 
-        <nav class="nav__links" aria-label="Primary navigation">
+        <nav class="nav__links" aria-label="Primary">
           <a href="#systems">Systems</a>
           <a href="#how">How it works</a>
-          <a href="/revenue-system.html">Install</a>
           <a href="#pricing">Pricing</a>
-          <a href="#contact" class="btn btn--small">Free Review</a>
+          <a href="#about">About</a>
+          <a class="btn btn--small" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+            Book a call
+          </a>
         </nav>
 
-        <!-- Mobile menu button -->
-        <button
-          class="nav__toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-controls="mobileNav"
-          aria-expanded="false"
-        >
-          <span class="nav__toggleBars" aria-hidden="true"></span>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="nav__toggleBars"></span>
         </button>
       </div>
 
-      <!-- Mobile dropdown -->
+      <!-- Mobile nav -->
       <div class="nav__mobile" id="mobileNav" hidden>
         <div class="container nav__mobileInner">
-          <a href="#systems" class="nav__mobileLink">Systems</a>
-          <a href="#how" class="nav__mobileLink">How it works</a>
-          <a href="/revenue-system.html" class="nav__mobileLink">Install</a>
-          <a href="#pricing" class="nav__mobileLink">Pricing</a>
-          <a href="#contact" class="btn btn--full">Free Review</a>
+          <a class="nav__mobileLink" href="#systems">Systems</a>
+          <a class="nav__mobileLink" href="#how">How it works</a>
+          <a class="nav__mobileLink" href="#pricing">Pricing</a>
+          <a class="nav__mobileLink" href="#about">About</a>
+          <a class="btn btn--full" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+            Book a call
+          </a>
         </div>
       </div>
     </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero" id="top">
+    <!-- ===== HERO ===== -->
+    <main id="top">
+      <section class="hero">
         <div class="container hero__inner">
           <div class="hero__copy">
             <div class="badge-row">
-              <span class="badge badge--rugged">Built for service businesses</span>
-              <span class="badge">Missed-call automation</span>
-              <span class="badge">Follow-up + reviews</span>
-              <span class="badge">CRM pipeline</span>
+              <span class="badge badge--rugged">Built for contractors</span>
+              <span class="badge">Carpenters • Handymen • Small service crews</span>
+              <span class="badge">Missed calls → booked jobs</span>
             </div>
 
-            <h1>Turn missed calls into booked jobs — automatically.</h1>
+            <h1>Stop losing leads. Start booking more jobs.</h1>
 
             <p class="subhead">
-              Blue Current installs an <strong>AI Revenue System</strong> so every lead gets captured, followed up, and
-              tracked — without you babysitting the phone.
+              Blue Current Co installs a contractor-focused missed-call + follow-up system that turns
+              “I’ll call you back” into scheduled estimates — without you changing how you work.
             </p>
 
             <div class="cta-row">
-              <a class="btn" href="#contact">Get a Free Revenue Leak Review</a>
-              <a class="btn btn--ghost" href="/revenue-system.html">See the Install Package</a>
+              <a class="btn" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+                Get started (15–30 min call)
+              </a>
+              <a class="btn btn--ghost" href="#pricing">See pricing</a>
             </div>
 
             <div class="trust-row">
-              <div class="trust-pill">Fast, practical installs</div>
-              <div class="trust-pill">No fluff, no “agency” vibe</div>
-              <div class="trust-pill">Works with your current tools</div>
+              <span class="trust-pill">No new ad spend required</span>
+              <span class="trust-pill">Installed in 7–10 days</span>
+              <span class="trust-pill">Works with your current number</span>
+              <span class="trust-pill">Limited installs each month</span>
+            </div>
+
+            <div class="proof">
+              <div class="proof__inner">
+                <p class="proof__title">This system fixes the leaks that quietly cost contractors real money:</p>
+                <div class="proof__grid">
+                  <div class="proof__item"><strong>Missed calls</strong><span class="muted">After-hours + on-site</span></div>
+                  <div class="proof__item"><strong>No follow-up</strong><span class="muted">“I’ll think about it”</span></div>
+                  <div class="proof__item"><strong>No reminders</strong><span class="muted">No-shows</span></div>
+                  <div class="proof__item"><strong>Slow quotes</strong><span class="muted">Leads go cold</span></div>
+                  <div class="proof__item"><strong>No reviews</strong><span class="muted">Less trust</span></div>
+                  <div class="proof__item"><strong>No tracking</strong><span class="muted">No clarity</span></div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <aside class="hero__card">
+          <div class="hero__card">
             <div class="card">
-              <h2 class="card__title">Phase 1 Offer</h2>
+              <h3 class="card__title">What you get (Phase 1 install)</h3>
               <p class="card__text">
-                <strong>AI Revenue System Install</strong><br />
-                One-time install that plugs the leaks: missed calls, slow follow-up, weak reviews, and zero tracking.
+                A done-for-you revenue system that captures leads, follows up automatically, and books estimates.
               </p>
 
               <ul class="checklist">
-                <li>Missed call text-back + lead capture</li>
+                <li>Missed-call text-back + lead capture</li>
                 <li>Automated follow-up sequences</li>
-                <li>Review automation</li>
-                <li>CRM pipeline + tracking</li>
+                <li>Estimate booking + reminders</li>
+                <li>Review automation after jobs</li>
+                <li>Simple pipeline + tracking</li>
               </ul>
 
-              <a class="btn btn--full" href="#pricing">View Pricing</a>
-              <p class="tiny muted">Install spots are limited to keep quality high.</p>
-            </div>
-          </aside>
-        </div>
-      </section>
+              <p class="tiny">
+                <strong>Heads up:</strong> Most contractors don’t need more leads — they need to stop losing the ones they already paid for.
+              </p>
 
-      <!-- PROOF -->
-      <section class="proof">
-        <div class="container proof__inner">
-          <p class="proof__title">Works great for:</p>
-          <div class="proof__grid">
-            <div class="proof__item"><strong>HVAC</strong><br /><span class="muted">fast follow-up</span></div>
-            <div class="proof__item"><strong>Roofing</strong><br /><span class="muted">missed calls</span></div>
-            <div class="proof__item"><strong>Plumbing</strong><br /><span class="muted">lead tracking</span></div>
-            <div class="proof__item"><strong>Landscaping</strong><br /><span class="muted">estimates</span></div>
-            <div class="proof__item"><strong>Cleaning</strong><br /><span class="muted">reviews</span></div>
-            <div class="proof__item"><strong>Contractors</strong><br /><span class="muted">pipeline clarity</span></div>
+              <div class="cta-row" style="margin-top: 14px;">
+                <a class="btn btn--full" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+                  Book a call
+                </a>
+              </div>
+
+              <p class="tiny">Limited to 3 new installs per month.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- SYSTEMS -->
-      <section id="systems" class="section section--muted">
+      <!-- ===== SYSTEMS ===== -->
+      <section class="section section--muted" id="systems">
         <div class="container">
           <div class="section__head">
-            <h2>The leak isn’t traffic. It’s follow-up.</h2>
+            <h2>The systems we install</h2>
             <p class="lead">
-              Most service businesses lose jobs because leads don’t get handled fast enough — missed calls, unanswered
-              forms, no pipeline, and no consistent review engine.
+              These are the exact components that protect your revenue when you’re on ladders, in basements,
+              or covered in dust — and can’t answer every call.
             </p>
-            <p class="muted">We install a simple system that keeps lead handling consistent and automatic.</p>
           </div>
 
           <div class="grid">
             <article class="tile">
               <h3>Missed Call Text-Back</h3>
-              <p>When you miss a call, the prospect gets an instant text — and the lead gets logged.</p>
+              <p>Instant reply that captures the lead and routes them into your pipeline.</p>
               <ul class="bullets">
-                <li>Instant SMS response</li>
-                <li>Lead captured automatically</li>
-                <li>Stops “ghost leads”</li>
+                <li>After-hours + on-site coverage</li>
+                <li>Captures name, job type, address</li>
+                <li>Sets expectation + next step</li>
               </ul>
             </article>
 
             <article class="tile">
-              <h3>Lead Capture + Follow-Up</h3>
-              <p>Forms and inbound leads get responded to immediately, then followed up until they book or opt out.</p>
+              <h3>Automated Follow-Up</h3>
+              <p>Multi-touch follow-up that turns “maybe” into booked estimates.</p>
               <ul class="bullets">
-                <li>Auto-replies with next steps</li>
-                <li>Follow-up sequences</li>
-                <li>Booking-friendly messaging</li>
+                <li>Short, contractor-friendly messages</li>
+                <li>Stops leads from going cold</li>
+                <li>Built-in “reply to book”</li>
               </ul>
             </article>
 
             <article class="tile">
-              <h3>Review Automation + Tracking</h3>
-              <p>After jobs, customers get a clean review request — and your pipeline shows what’s closing.</p>
+              <h3>Review Automation</h3>
+              <p>More 5-star reviews without awkward asking — sent after jobs are completed.</p>
               <ul class="bullets">
-                <li>Review request workflows</li>
-                <li>CRM pipeline visibility</li>
-                <li>Basic performance dashboard</li>
+                <li>Review link + simple prompt</li>
+                <li>Boosts trust and close rate</li>
+                <li>Optional “issue first” routing</li>
+              </ul>
+            </article>
+
+            <article class="tile">
+              <h3>Lead Capture Funnel</h3>
+              <p>Fast, clear lead capture page that pushes straight to booking.</p>
+              <ul class="bullets">
+                <li>Simple intake</li>
+                <li>Direct scheduling link</li>
+                <li>Mobile-first</li>
+              </ul>
+            </article>
+
+            <article class="tile">
+              <h3>Estimate Booking + Reminders</h3>
+              <p>Less back-and-forth. Less no-shows. Cleaner schedule.</p>
+              <ul class="bullets">
+                <li>Booking link (Calendly)</li>
+                <li>Automatic confirmations</li>
+                <li>Reminder messages</li>
+              </ul>
+            </article>
+
+            <article class="tile">
+              <h3>Simple CRM Tracking</h3>
+              <p>Know what’s pending, who needs follow-up, and where money is stuck.</p>
+              <ul class="bullets">
+                <li>Pipeline stages</li>
+                <li>Lead source notes</li>
+                <li>Basic metrics</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- HOW -->
-      <section id="how" class="section">
+      <!-- ===== HOW IT WORKS ===== -->
+      <section class="section" id="how">
         <div class="container">
           <div class="section__head">
             <h2>How it works</h2>
-            <p class="muted">Straightforward, fast, and operator-led.</p>
+            <p class="lead">
+              You don’t need more software. You need a system installed for you — then tuned.
+            </p>
           </div>
 
           <div class="steps">
             <div class="step">
               <div class="step__num">1</div>
               <div>
-                <h3>Free review</h3>
-                <p>Send your website + what you want more of. I’ll highlight the biggest lead leak.</p>
+                <h3>Quick call (15–30 min)</h3>
+                <p>We map your current lead flow, missed call volume, and where jobs are slipping.</p>
               </div>
             </div>
 
             <div class="step">
               <div class="step__num">2</div>
               <div>
-                <h3>Install plan</h3>
-                <p>Clear scope, clear cost, clear timeline. No fluff.</p>
+                <h3>Install + setup</h3>
+                <p>We build your missed-call + follow-up + booking flow and connect it to your tools.</p>
               </div>
             </div>
 
             <div class="step">
               <div class="step__num">3</div>
               <div>
-                <h3>System goes live</h3>
-                <p>Missed calls and forms get handled automatically — and you can finally track the pipeline.</p>
+                <h3>Test + go-live</h3>
+                <p>We run tests, tune the messages, and launch. You start catching leads immediately.</p>
               </div>
             </div>
+
+            <div class="step">
+              <div class="step__num">4</div>
+              <div>
+                <h3>Optional monthly support</h3>
+                <p>We monitor, fix, and improve so your system keeps booking as you grow.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row" style="margin-top: 18px;">
+            <a class="btn" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+              Book a call
+            </a>
+            <a class="btn btn--ghost" href="#pricing">View pricing</a>
           </div>
         </div>
       </section>
 
-      <!-- PRICING -->
-      <section id="pricing" class="section section--muted">
+      <!-- ===== PRICING ===== -->
+      <section class="section section--muted" id="pricing">
         <div class="container">
           <div class="section__head">
             <h2>Pricing</h2>
-            <p class="muted">Simple Phase 1 pricing. Install it once. Keep it running.</p>
+            <p class="lead">Simple Phase 1 pricing. Install it once. Keep it running.</p>
           </div>
 
           <div class="grid">
             <article class="tile">
               <h3>AI Revenue System Install</h3>
-              <p class="lead"><strong>$5,000</strong> one-time install</p>
-              <ul class="checklist">
+              <p class="muted" style="margin-top:-2px;"><strong>$5,000</strong> one-time install</p>
+
+              <ul class="bullets">
                 <li>Lead capture + missed call text-back</li>
                 <li>Automated follow-up sequences</li>
                 <li>Review automation</li>
@@ -226,184 +280,181 @@
               </ul>
 
               <div class="cta-row" style="margin-top: 14px;">
-                <a class="btn" href="https://buy.stripe.com/8x23cw6z66HSad761H7kc00" target="_blank" rel="noopener">Pay deposit</a>
-                <a class="btn btn--ghost" href="/revenue-system.html">Details</a>
+                <a class="btn" href="https://buy.stripe.com/8x23cw6z66HSad761H7kc00" target="_blank" rel="noopener">
+                  Pay deposit
+                </a>
+                <a class="btn btn--ghost" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+                  Book call first
+                </a>
               </div>
 
-              <p class="tiny muted">Typical structure: 50% deposit to start, 50% before go-live.</p>
+              <p class="tiny">Typical structure: 50% deposit to start, 50% before go-live.</p>
             </article>
 
             <article class="tile">
               <h3>AI Revenue System Support</h3>
-              <p class="lead"><strong>$497</strong>/month</p>
-              <ul class="checklist">
+              <p class="muted" style="margin-top:-2px;"><strong>$497</strong>/month</p>
+
+              <ul class="bullets">
                 <li>Automation monitoring + fixes</li>
                 <li>Performance tuning</li>
                 <li>Workflow updates</li>
                 <li>Priority support</li>
               </ul>
 
-              <a class="btn btn--full" href="https://buy.stripe.com/14A14o1eM8Q070V61H7kc01" target="_blank" rel="noopener"
-                >Start support</a
-              >
-              <p class="tiny muted">Optional. Most clients add after go-live.</p>
+              <div class="cta-row" style="margin-top: 14px;">
+                <a class="btn btn--full" href="https://buy.stripe.com/14A14o1eM8Q070V61H7kc01" target="_blank" rel="noopener">
+                  Start support
+                </a>
+              </div>
+
+              <p class="tiny">Optional. Most clients add after go-live.</p>
             </article>
 
             <article class="tile">
               <h3>Free Revenue Leak Review</h3>
               <p>Short review to pinpoint what’s costing you calls and bookings.</p>
-              <ul class="checklist">
+
+              <ul class="bullets">
                 <li>Biggest leak (and why)</li>
                 <li>3–5 quick wins</li>
                 <li>Clear install recommendation</li>
               </ul>
-              <a class="btn btn--full" href="#contact">Request free review</a>
-              <p class="tiny muted">Usually replied to within 24–48 hours.</p>
+
+              <div class="cta-row" style="margin-top: 14px;">
+                <a class="btn btn--full" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+                  Request free review
+                </a>
+              </div>
+
+              <p class="tiny">Usually replied to within 24–48 hours.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="section">
+      <!-- ===== ABOUT ===== -->
+      <section class="section" id="about">
         <div class="container">
+          <div class="section__head">
+            <h2>About Blue Current Co</h2>
+            <p class="lead">
+              Built for hard workers. No fluff. Just systems that protect your revenue while you’re doing the work.
+            </p>
+          </div>
+
           <div class="about">
-            <div>
-              <h2>From the jobsite, not a marketing agency</h2>
-              <p class="lead">Husband, father, and 4th-generation carpenter.</p>
+            <div class="card--tight">
               <p>
-                My grandfather — <strong>“Smiling Ed”</strong> — taught me that reputation is everything. For
-                generations, word of mouth was enough.
+                Contractors don’t lose money because they’re lazy — they lose it because they’re busy.
+                Calls get missed. Leads cool off. Follow-ups never happen.
               </p>
               <p>
-                Today, homeowners search online before talking to a neighbor. Blue Current exists to make sure your
-                online presence reflects the quality of your work: clean, honest, and easy to contact.
+                We install a reliable follow-up and booking system so you stop bleeding jobs and start closing more work
+                from the leads you already have.
               </p>
 
               <div class="rugged-quote">
-                <p>“Show up. Do the job right. Let the work speak.”</p>
-                <span>— Smiling Ed</span>
+                <p>“If you’re doing $500k–$3M and you miss calls… you’re missing money.”</p>
+                <span>We fix the leak — fast.</span>
               </div>
             </div>
 
-            <div class="card card--tight">
-              <h3>What you can expect</h3>
-              <ul class="checklist">
-                <li>Clean, modern systems</li>
-                <li>Trust-building messaging</li>
-                <li>Fast turnaround</li>
-                <li>No long-term contract</li>
-              </ul>
-              <a class="btn btn--full" href="#contact">Request a Free Review</a>
-              <p class="tiny muted">Based in NJ — available nationwide.</p>
+            <div class="card--tight">
+              <h3 style="margin-top:0;">Next step</h3>
+              <p class="muted">
+                Book a short call. We’ll map your lead flow and tell you exactly what to install.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn--full" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">
+                  Book the call
+                </a>
+              </div>
+
+              <p class="tiny">
+                Limited monthly installs to keep quality high.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section section--muted">
+      <!-- ===== CONTACT (Netlify Form) ===== -->
+      <section class="section section--muted" id="contact">
         <div class="container">
+          <div class="section__head">
+            <h2>Send a quick note</h2>
+            <p class="lead">
+              If you’d rather message first, send the basics and we’ll reply with next steps.
+            </p>
+          </div>
+
           <div class="contact">
-            <div>
-              <h2>Request your free revenue leak review</h2>
-              <p class="lead">
-                Send your website link and what type of work you want more of. I’ll reply with a clear breakdown and
-                next steps.
-              </p>
+            <div class="card--tight">
+              <h3 style="margin-top:0;">What to include</h3>
+              <ul class="bullets">
+                <li>Your trade (carpenter, handyman, GC, etc.)</li>
+                <li>Your service area</li>
+                <li>How leads come in (calls, website, Facebook, etc.)</li>
+                <li>Where you think you’re losing jobs</li>
+              </ul>
 
               <div class="contact__meta">
-                <div><strong>Email:</strong> <a href="mailto:keith@bluecurrentco.com">keith@bluecurrentco.com</a></div>
+                <div><strong>Fastest:</strong> book a call</div>
+                <a class="btn btn--small" href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">Calendly link</a>
               </div>
             </div>
 
-            <!-- Netlify Forms (IMPORTANT: do not self-close the form tag) -->
             <form class="form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="subject" value="Blue Current Co – Revenue Leak Review" />
+              <input type="hidden" name="subject" value="Blue Current Co – Lead Message" />
 
               <label>
                 Name
-                <input name="name" type="text" placeholder="Your name" required />
-              </label>
-
-              <label>
-                Business Name
-                <input name="business" type="text" placeholder="Company" required />
+                <input type="text" name="name" placeholder="Your name" required />
               </label>
 
               <label>
                 Email
-                <input name="email" type="email" placeholder="you@company.com" required />
+                <input type="email" name="email" placeholder="you@company.com" required />
               </label>
 
               <label>
-                Website URL
-                <input name="website" placeholder="https://..." required />
+                Phone (optional)
+                <input type="tel" name="phone" placeholder="(555) 555-5555" />
               </label>
 
               <label>
-                Industry / Service
-                <input name="industry" placeholder="HVAC, Roofing, Cleaning, Landscaping, etc." />
+                Business type
+                <input type="text" name="trade" placeholder="Handyman, carpenter, GC, etc." />
               </label>
 
               <label>
-                What’s your biggest lead problem right now?
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Missed calls, slow follow-up, no reviews, no tracking..."
-                  required
-                ></textarea>
+                Message
+                <textarea name="message" rows="5" placeholder="What’s happening with leads + missed calls?" required></textarea>
               </label>
 
               <button class="btn btn--full" type="submit">Send</button>
-              <p class="tiny muted">No spam. No pressure. Just a clear review.</p>
+
+              <p class="tiny">
+                Prefer to book? Use Calendly:
+                <a href="https://calendly.com/keith-bluecurrentco/30min" target="_blank" rel="noopener">schedule here</a>.
+              </p>
             </form>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="container footer__inner">
         <div>© <span id="year"></span> Blue Current Co.</div>
-        <div class="footer__right">In honor of “Smiling Ed & Madelyn Slocum.”</div>
+        <div>Built for contractors. Always in motion.</div>
       </div>
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Mobile nav toggle
-      const btn = document.querySelector(".nav__toggle");
-      const panel = document.getElementById("mobileNav");
-
-      if (btn && panel) {
-        const close = () => {
-          btn.setAttribute("aria-expanded", "false");
-          btn.setAttribute("aria-label", "Open menu");
-          panel.hidden = true;
-        };
-        const open = () => {
-          btn.setAttribute("aria-expanded", "true");
-          btn.setAttribute("aria-label", "Close menu");
-          panel.hidden = false;
-        };
-
-        btn.addEventListener("click", () => {
-          const expanded = btn.getAttribute("aria-expanded") === "true";
-          expanded ? close() : open();
-        });
-
-        panel.addEventListener("click", (e) => {
-          if (e.target && e.target.matches("a")) close();
-        });
-
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") close();
-        });
-      }
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -18,6 +18,9 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 90px; }
+
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background:
@@ -285,9 +288,7 @@ h2 { margin: 0; font-size: clamp(24px, 2.6vw, 30px); letter-spacing: -0.2px; }
 .lead { margin: 0; color: rgba(234, 240, 255, 0.82); max-width: 80ch; }
 .muted { color: var(--muted); }
 
-/* Proof sections */
 .proof { padding: 18px 0 0; }
-.proof + .proof { padding-top: 10px; }
 .proof__inner { border-top: 1px solid var(--line); padding-top: 18px; }
 .proof__title { margin: 0 0 12px; color: var(--muted); }
 
@@ -446,7 +447,6 @@ input:focus, textarea:focus {
   border-color: rgba(43, 188, 255, 0.6);
 }
 
-/* IMPORTANT: removes stray bullets / left dots */
 ul { margin: 0; padding-left: 18px; }
 
 .bullets, .checklist {
@@ -457,7 +457,6 @@ ul { margin: 0; padding-left: 18px; }
 }
 .bullets li, .checklist li { margin-bottom: 7px; }
 
-/* Tiny text */
 .tiny {
   font-size: 12px;
   margin: 10px 0 0;
@@ -479,7 +478,6 @@ ul { margin: 0; padding-left: 18px; }
   font-size: 13px;
 }
 
-/* Premium polish: subtle hover lift */
 .tile:hover,
 .step:hover,
 .hero__card .card:hover,
