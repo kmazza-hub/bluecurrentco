@@ -6,9 +6,9 @@
   --muted: rgba(234, 240, 255, 0.72);
   --line: rgba(255, 255, 255, 0.10);
 
-  --accent: #2bbcff;      /* modern SaaS */
-  --accent2: #2fe3c5;     /* modern SaaS */
-  --rugged: #ffb703;      /* bold/rugged accent */
+  --accent: #2bbcff;
+  --accent2: #2fe3c5;
+  --rugged: #ffb703;
   --shadow: 0 16px 46px rgba(0, 0, 0, 0.32);
 
   --radius: 18px;
@@ -18,9 +18,6 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-section { scroll-margin-top: 90px; }
-
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background:
@@ -116,11 +113,13 @@ a:hover { opacity: 0.95; }
 }
 
 .btn:hover { filter: brightness(1.05); }
+
 .btn--ghost {
   background: transparent;
   border: 1px solid var(--line);
   box-shadow: none;
 }
+
 .btn--small { padding: 10px 12px; border-radius: 12px; }
 .btn--full { width: 100%; }
 
@@ -190,6 +189,24 @@ a:hover { opacity: 0.95; }
   color: var(--text);
 }
 
+.nav__mobileMeta {
+  margin-top: 6px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: 12px;
+  display: grid;
+  gap: 6px;
+}
+.nav__mobilePhone {
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.03);
+  text-decoration: none;
+}
+
+/* HERO */
 .hero { padding: 56px 0 22px; }
 
 .hero__inner {
@@ -242,6 +259,8 @@ h1 {
   gap: 12px;
   margin-bottom: 16px;
 }
+
+.hero__note { margin: 0 0 16px; }
 
 .trust-row {
   display: flex;
@@ -478,6 +497,7 @@ ul { margin: 0; padding-left: 18px; }
   font-size: 13px;
 }
 
+/* subtle hover lift */
 .tile:hover,
 .step:hover,
 .hero__card .card:hover,

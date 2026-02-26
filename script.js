@@ -1,33 +1,31 @@
+// Mobile nav toggle + close on link click + footer year
 (() => {
-  // Footer year
+  const navToggle = document.getElementById("navToggle");
+  const mobileNav = document.getElementById("mobileNav");
   const yearEl = document.getElementById("year");
+
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Mobile nav toggle
-  const toggle = document.getElementById("navToggle");
-  const mobileNav = document.getElementById("mobileNav");
+  if (!navToggle || !mobileNav) return;
 
-  if (toggle && mobileNav) {
-    const closeMobile = () => {
-      mobileNav.hidden = true;
-      toggle.setAttribute("aria-expanded", "false");
-    };
+  const setOpen = (open) => {
+    navToggle.setAttribute("aria-expanded", String(open));
+    mobileNav.hidden = !open;
+  };
 
-    toggle.addEventListener("click", () => {
-      const isOpen = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!isOpen));
-      mobileNav.hidden = isOpen;
-    });
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+    setOpen(!isOpen);
+  });
 
-    // Close when a mobile link is clicked
-    mobileNav.addEventListener("click", (e) => {
-      const target = e.target;
-      if (target && target.matches("a")) closeMobile();
-    });
+  // Close menu when clicking a mobile link
+  mobileNav.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target && target.matches("a")) setOpen(false);
+  });
 
-    // Close on Escape
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMobile();
-    });
-  }
+  // Close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
 })();
