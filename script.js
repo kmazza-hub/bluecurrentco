@@ -1,31 +1,47 @@
-// Mobile nav toggle + close on link click + footer year
 (() => {
-  const navToggle = document.getElementById("navToggle");
-  const mobileNav = document.getElementById("mobileNav");
+  // Year in footer
   const yearEl = document.getElementById("year");
-
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  if (!navToggle || !mobileNav) return;
+  // Today's date for legal pages
+  const todayEls = document.querySelectorAll(".js-today");
+  if (todayEls.length) {
+    const d = new Date();
+    const formatted = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+    todayEls.forEach((el) => (el.textContent = formatted));
+  }
 
-  const setOpen = (open) => {
-    navToggle.setAttribute("aria-expanded", String(open));
-    mobileNav.hidden = !open;
-  };
+  // Mobile nav toggle
+  const toggle = document.getElementById("navToggle");
+  const mobileNav = document.getElementById("mobileNav");
 
-  navToggle.addEventListener("click", () => {
-    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
-    setOpen(!isOpen);
-  });
+  if (toggle && mobileNav) {
+    const closeNav = () => {
+      mobileNav.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
+    };
 
-  // Close menu when clicking a mobile link
-  mobileNav.addEventListener("click", (e) => {
-    const target = e.target;
-    if (target && target.matches("a")) setOpen(false);
-  });
+    const openNav = () => {
+      mobileNav.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close menu");
+    };
 
-  // Close on ESC
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setOpen(false);
-  });
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      isOpen ? closeNav() : openNav();
+    });
+
+    // Close on link click
+    mobileNav.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target && target.matches("a")) closeNav();
+    });
+
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeNav();
+    });
+  }
 })();
