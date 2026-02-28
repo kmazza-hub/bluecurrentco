@@ -386,20 +386,41 @@ input:focus, textarea:focus{
   box-shadow: 0 0 0 4px rgba(31,182,255,.10);
 }
 
-.consent{
-  display:flex;
-  gap:10px;
-  align-items:flex-start;
-  margin: 14px 0 10px;
+/* =========================
+   Consent / SMS Checkbox
+========================= */
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
-.consent input{
-  width:18px; height:18px;
-  margin-top: 2px;
+
+.consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  accent-color: var(--primary);
+  cursor: pointer;
 }
-.consent span{
-  color: rgba(255,255,255,.78);
-  line-height: 1.45;
-  font-size: 13px;
+
+.consent span {
+  display: block;
+}
+
+.consent a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.consent input[type="checkbox"]:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .contact__meta{
