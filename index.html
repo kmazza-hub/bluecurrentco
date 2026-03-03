@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- ===== NAV ===== -->
     <header class="nav">
       <div class="container nav__inner">
@@ -29,503 +29,304 @@
           <a href="#pricing">Pricing</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-
-          <!-- ONE primary CTA in nav -->
-          <a
-            class="btn btn--small"
-            href="https://calendly.com/keith-bluecurrentco/30min"
-            target="_blank"
-            rel="noopener"
-          >
-            Book a call
-          </a>
         </nav>
 
-        <button
-          class="nav__toggle"
-          id="navToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="mobileNav"
-        >
-          <span class="nav__toggleBars"></span>
-        </button>
-      </div>
-
-      <!-- Mobile nav -->
-      <div class="nav__mobile" id="mobileNav" hidden>
-        <div class="container nav__mobileInner">
-          <a class="nav__mobileLink" href="#systems">Systems</a>
-          <a class="nav__mobileLink" href="#how">How it works</a>
-          <a class="nav__mobileLink" href="#pricing">Pricing</a>
-          <a class="nav__mobileLink" href="#about">About</a>
-          <a class="nav__mobileLink" href="#contact">Contact</a>
-
-          <a
-            class="btn btn--full"
-            href="https://calendly.com/keith-bluecurrentco/30min"
-            target="_blank"
-            rel="noopener"
-          >
-            Book a call
-          </a>
+        <div class="nav__cta">
+          <a class="btn btn--primary" href="#book">Book a call</a>
         </div>
       </div>
     </header>
 
     <!-- ===== HERO ===== -->
-    <main id="top">
-      <section class="hero">
-        <div class="container hero__inner">
-          <div class="hero__copy">
-            <div class="badge-row">
-              <span class="badge badge--rugged">Built for contractors</span>
-              <span class="badge">Carpenters • Handymen • Small service crews</span>
-              <span class="badge">Missed calls → booked jobs</span>
-            </div>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">Built for blue-collar trades</div>
+          <h1>Stop losing leads. Start booking more jobs.</h1>
+          <p class="lead">
+            Blue Current installs missed-call recovery and follow-up systems that turn calls, forms, and DMs into booked estimates —
+            without you living on your phone.
+          </p>
 
-            <h1>Stop losing leads. Start booking more jobs.</h1>
-
-            <p class="subhead">
-              Blue Current Co installs a contractor-focused missed-call + follow-up system that turns
-              “I’ll call you back” into scheduled estimates — without you changing how you work.
-            </p>
-
-            <!-- TWO CTAs MAX in hero -->
-            <div class="cta-row">
-              <a
-                class="btn"
-                href="https://calendly.com/keith-bluecurrentco/30min"
-                target="_blank"
-                rel="noopener"
-              >
-                Book a call (15–30 min)
-              </a>
-
-              <a class="btn btn--ghost" href="tel:8482461414">
-                Call: 848-246-1414
-              </a>
-            </div>
-
-            <p class="tiny muted" style="margin-top: 10px;">
-              Prefer phone? Call or text <a href="tel:8482461414">848-246-1414</a>. You’ll reach Keith directly.
-            </p>
-
-            <div class="trust-row">
-              <span class="trust-pill">No new ad spend required</span>
-              <span class="trust-pill">Installed in 7–10 days</span>
-              <span class="trust-pill">Works with your current number</span>
-              <span class="trust-pill">Limited installs each month</span>
-            </div>
-
-            <div class="proof">
-              <div class="proof__inner">
-                <p class="proof__title">
-                  This system fixes the leaks that quietly cost contractors real money:
-                </p>
-                <div class="proof__grid">
-                  <div class="proof__item">
-                    <strong>Missed calls</strong>
-                    <span class="muted">After-hours + on-site</span>
-                  </div>
-                  <div class="proof__item">
-                    <strong>No follow-up</strong>
-                    <span class="muted">“I’ll think about it”</span>
-                  </div>
-                  <div class="proof__item">
-                    <strong>No reminders</strong>
-                    <span class="muted">No-shows</span>
-                  </div>
-                  <div class="proof__item">
-                    <strong>Slow quotes</strong>
-                    <span class="muted">Leads go cold</span>
-                  </div>
-                  <div class="proof__item">
-                    <strong>No reviews</strong>
-                    <span class="muted">Less trust</span>
-                  </div>
-                  <div class="proof__item">
-                    <strong>No tracking</strong>
-                    <span class="muted">No clarity</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#pricing">See packages</a>
+            <a class="btn btn--ghost" href="#systems">What we install</a>
           </div>
 
-          <div class="hero__card">
-            <div class="card">
-              <h3 class="card__title">What you get (Phase 1 install)</h3>
-              <p class="card__text">
-                A done-for-you revenue system that captures leads, follows up automatically, and books estimates.
-              </p>
-
-              <ul class="checklist">
-                <li>Missed-call text-back + lead capture</li>
-                <li>Automated follow-up sequences</li>
-                <li>Estimate booking + reminders</li>
-                <li>Review automation after jobs</li>
-                <li>Simple pipeline + tracking</li>
-              </ul>
-
-              <p class="tiny">
-                <strong>Heads up:</strong> Most contractors don’t need more leads — they need to stop losing the ones they already paid for.
-              </p>
-
-              <p class="tiny" style="margin-top: 12px;">
-                Call or text: <a href="tel:8482461414">848-246-1414</a>
-              </p>
-
-              <p class="tiny">Limited to 3 new installs per month.</p>
+          <div class="trust">
+            <div class="trust__item">
+              <span class="dot"></span>
+              <span>Fast setup</span>
+            </div>
+            <div class="trust__item">
+              <span class="dot"></span>
+              <span>Works after hours</span>
+            </div>
+            <div class="trust__item">
+              <span class="dot"></span>
+              <span>Simple & repeatable</span>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- ===== SYSTEMS ===== -->
-      <section class="section section--muted" id="systems">
-        <div class="container">
-          <div class="section__head">
-            <h2>The systems we install</h2>
-            <p class="lead">
-              These are the exact components that protect your revenue when you’re on ladders, in basements,
-              or covered in dust — and can’t answer every call.
-            </p>
+        <div class="hero__card">
+          <div class="card__top">
+            <div class="card__badge">Default Lead Machine™</div>
+            <div class="card__title">What you get</div>
           </div>
 
-          <div class="grid">
-            <article class="tile">
-              <h3>Missed Call Text-Back</h3>
-              <p>Instant reply that captures the lead and routes them into your pipeline.</p>
-              <ul class="bullets">
-                <li>After-hours + on-site coverage</li>
-                <li>Captures name, job type, address</li>
-                <li>Sets expectation + next step</li>
-              </ul>
-            </article>
+          <ul class="checklist">
+            <li>Missed-call auto text + follow-up</li>
+            <li>Instant form response</li>
+            <li>Pipeline + lead tracking</li>
+            <li>Scheduling link + reminders</li>
+            <li>Owner alerts + internal notes</li>
+          </ul>
 
-            <article class="tile">
-              <h3>Automated Follow-Up</h3>
-              <p>Multi-touch follow-up that turns “maybe” into booked estimates.</p>
-              <ul class="bullets">
-                <li>Short, contractor-friendly messages</li>
-                <li>Stops leads from going cold</li>
-                <li>Built-in “reply to book”</li>
-              </ul>
-            </article>
-
-            <article class="tile">
-              <h3>Review Automation</h3>
-              <p>More 5-star reviews without awkward asking — sent after jobs are completed.</p>
-              <ul class="bullets">
-                <li>Review link + simple prompt</li>
-                <li>Boosts trust and close rate</li>
-                <li>Optional “issue first” routing</li>
-              </ul>
-            </article>
-
-            <article class="tile">
-              <h3>Lead Capture Funnel</h3>
-              <p>Fast, clear lead capture page that pushes straight to booking.</p>
-              <ul class="bullets">
-                <li>Simple intake</li>
-                <li>Direct scheduling link</li>
-                <li>Mobile-first</li>
-              </ul>
-            </article>
-
-            <article class="tile">
-              <h3>Estimate Booking + Reminders</h3>
-              <p>Less back-and-forth. Less no-shows. Cleaner schedule.</p>
-              <ul class="bullets">
-                <li>Booking link (Calendly)</li>
-                <li>Automatic confirmations</li>
-                <li>Reminder messages</li>
-              </ul>
-            </article>
-
-            <article class="tile">
-              <h3>Simple CRM Tracking</h3>
-              <p>Know what’s pending, who needs follow-up, and where money is stuck.</p>
-              <ul class="bullets">
-                <li>Pipeline stages</li>
-                <li>Lead source notes</li>
-                <li>Basic metrics</li>
-              </ul>
-            </article>
+          <div class="card__foot">
+            <a class="btn btn--primary btn--full" href="#book">Book a 10-min strategy call</a>
+            <p class="muted tiny">We’ll map your current lead flow and plug the leaks.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ===== HOW IT WORKS ===== -->
-      <section class="section" id="how">
-        <div class="container">
-          <div class="section__head">
-            <h2>How it works</h2>
-            <p class="lead">
-              You don’t need more software. You need a system installed for you — then tuned.
-            </p>
-          </div>
-
-          <div class="steps">
-            <div class="step">
-              <div class="step__num">1</div>
-              <div>
-                <h3>Quick call (15–30 min)</h3>
-                <p>We map your current lead flow, missed call volume, and where jobs are slipping.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step__num">2</div>
-              <div>
-                <h3>Install + setup</h3>
-                <p>We build your missed-call + follow-up + booking flow and connect it to your tools.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step__num">3</div>
-              <div>
-                <h3>Test + go-live</h3>
-                <p>We run tests, tune the messages, and launch. You start catching leads immediately.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step__num">4</div>
-              <div>
-                <h3>Optional monthly support</h3>
-                <p>We monitor, fix, and improve so your system keeps booking as you grow.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cta-row" style="margin-top: 18px;">
-            <a class="btn btn--ghost" href="#pricing">View pricing</a>
-            <a class="btn btn--ghost" href="#contact">Send a note</a>
-          </div>
+    <!-- ===== SYSTEMS ===== -->
+    <section class="section" id="systems">
+      <div class="container">
+        <div class="section__head">
+          <h2>Systems we install</h2>
+          <p class="muted">Pick one, or stack them. Everything is designed to run on autopilot after setup.</p>
         </div>
-      </section>
 
-      <!-- ===== PRICING ===== -->
-      <section class="section section--muted" id="pricing">
-        <div class="container">
-          <div class="section__head">
-            <h2>Pricing</h2>
-            <p class="lead">Simple Phase 1 pricing. Install it once. Keep it running.</p>
-          </div>
-
-          <div class="grid">
-            <article class="tile">
-              <h3>AI Revenue System Install</h3>
-              <p class="muted" style="margin-top:-2px;"><strong>$5,000</strong> one-time install</p>
-
-              <ul class="bullets">
-                <li>Lead capture + missed call text-back</li>
-                <li>Automated follow-up sequences</li>
-                <li>Review automation</li>
-                <li>CRM pipeline + tracking</li>
-                <li>Testing + go-live</li>
-              </ul>
-
-              <div class="cta-row" style="margin-top: 14px;">
-                <a
-                  class="btn"
-                  href="https://buy.stripe.com/8x23cw6z66HSad761H7kc00"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Pay deposit
-                </a>
-                <a class="btn btn--ghost" href="#contact">Questions first?</a>
-              </div>
-
-              <p class="tiny">Typical structure: 50% deposit to start, 50% before go-live.</p>
-            </article>
-
-            <article class="tile">
-              <h3>AI Revenue System Support</h3>
-              <p class="muted" style="margin-top:-2px;"><strong>$497</strong>/month</p>
-
-              <ul class="bullets">
-                <li>Automation monitoring + fixes</li>
-                <li>Performance tuning</li>
-                <li>Workflow updates</li>
-                <li>Priority support</li>
-              </ul>
-
-              <div class="cta-row" style="margin-top: 14px;">
-                <a
-                  class="btn btn--full"
-                  href="https://buy.stripe.com/14A14o1eM8Q070V61H7kc01"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Start support
-                </a>
-              </div>
-
-              <p class="tiny">Optional. Most clients add after go-live.</p>
-            </article>
-
-            <article class="tile">
-              <h3>Free Revenue Leak Review</h3>
-              <p>Short review to pinpoint what’s costing you calls and bookings.</p>
-
-              <ul class="bullets">
-                <li>Biggest leak (and why)</li>
-                <li>3–5 quick wins</li>
-                <li>Clear install recommendation</li>
-              </ul>
-
-              <div class="cta-row" style="margin-top: 14px;">
-                <a class="btn btn--full" href="#contact">
-                  Request free review
-                </a>
-              </div>
-
-              <p class="tiny">Usually replied to within 24–48 hours.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== ABOUT ===== -->
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section__head">
-            <h2>About Blue Current Co</h2>
-            <p class="lead">
-              Built for hard workers. No fluff. Just systems that protect your revenue while you’re doing the work.
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Missed Call Recovery</h3>
+            <p class="muted">
+              If you miss a call, the lead instantly gets a text. Then we follow up until you connect or they opt out.
             </p>
+            <ul class="mini">
+              <li>Immediate “sorry we missed you” text</li>
+              <li>2–3 follow-up touches</li>
+              <li>Stops if they reply/book</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Lead Capture + Routing</h3>
+            <p class="muted">
+              Website forms and DMs flow into one inbox, one pipeline, one set of rules — no more missing people.
+            </p>
+            <ul class="mini">
+              <li>Form + SMS + email routing</li>
+              <li>Pipeline stage automation</li>
+              <li>Owner/internal alerts</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Scheduling + Reminders</h3>
+            <p class="muted">
+              Make it stupid easy for prospects to book a call/estimate. Reduce no-shows with reminders.
+            </p>
+            <ul class="mini">
+              <li>Booking link embed</li>
+              <li>SMS reminders</li>
+              <li>Reschedule links</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <div class="section__head">
+          <h2>How it works</h2>
+          <p class="muted">Simple process. Quick install. Repeatable results.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <h3>Quick audit</h3>
+              <p class="muted">We map how leads come in today and where they fall through the cracks.</p>
+            </div>
           </div>
 
-          <div class="about">
-            <div class="card--tight">
-              <p>
-                Contractors don’t lose money because they’re lazy — they lose it because they’re busy.
-                Calls get missed. Leads cool off. Follow-ups never happen.
-              </p>
-              <p>
-                We install a reliable follow-up and booking system so you stop bleeding jobs and start closing more work
-                from the leads you already have.
-              </p>
-
-              <div class="rugged-quote">
-                <p>“If you’re doing $500k–$3M and you miss calls… you’re missing money.”</p>
-                <span>We fix the leak — fast.</span>
-              </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <h3>Install the system</h3>
+              <p class="muted">We build the workflows, texts, forms, and tracking — and test everything end-to-end.</p>
             </div>
+          </div>
 
-            <div class="card--tight">
-              <h3 style="margin-top:0;">Contact</h3>
-              <p class="muted">
-                Want a quick answer? Call or text. Prefer a form? Send the basics below.
-              </p>
-
-              <div class="contact-chips">
-                <a class="chip" href="tel:8482461414">Call: 848-246-1414</a>
-                <a class="chip" href="mailto:keith@bluecurrentco.com">Email: keith@bluecurrentco.com</a>
-              </div>
-
-              <p class="tiny">
-                Business: Blue Current Services LLC (DBA: Blue Current Co)
-              </p>
-              <p class="tiny">
-                Address: 1024 6th Ave, Wall Township, NJ
-              </p>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <h3>Run it on autopilot</h3>
+              <p class="muted">You get more booked conversations without living on your phone.</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-        <section class="booking" id="book">
-  <div class="container">
-    <h2>Book a 10-Minute Strategy Call</h2>
-    <p>Pick a time that works — I’ll call you personally.</p>
+    <!-- ===== PRICING ===== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2>Pricing</h2>
+          <p class="muted">Pick a package. We install. You keep it running.</p>
+        </div>
 
-    <div class="booking__embed">
-      <iframe
-        src="https://api.leadconnectorhq.com/widget/booking/3xIjQHhsnJEgyxwOATMp"
-        style="width: 100%; border: none; overflow: hidden;"
-        scrolling="no"
-        id="3xIjQHhsnJEgyxwOATMp_1772410200401"
-      ></iframe>
-    </div>
+        <div class="grid grid--3">
+          <article class="card price">
+            <div class="price__head">
+              <h3>Fix & Ship</h3>
+              <p class="muted">Get the basics live fast.</p>
+            </div>
+            <div class="price__tag">$297 setup</div>
+            <ul class="checklist">
+              <li>Missed-call auto reply</li>
+              <li>Basic follow-up sequence</li>
+              <li>Owner notification</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#contact">Ask a question</a>
+          </article>
 
-    <div class="booking__actions">
-      <a
-        class="btn btn--primary"
-        href="https://api.leadconnectorhq.com/widget/booking/3xIjQHhsnJEgyxwOATMp"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open Booking Page
-      </a>
-    </div>
-  </div>
-</section>
+          <article class="card price price--featured">
+            <div class="price__head">
+              <h3>Feature Boost</h3>
+              <p class="muted">Best for most contractors.</p>
+            </div>
+            <div class="price__tag">$597 setup</div>
+            <ul class="checklist">
+              <li>Missed-call recovery v1</li>
+              <li>Form instant response</li>
+              <li>Pipeline stages</li>
+              <li>Scheduling link</li>
+            </ul>
+            <a class="btn btn--primary btn--full" href="#book">Book a call</a>
+          </article>
 
-<script
-  src="https://api.leadconnectorhq.com/js/form_embed.js"
-  type="text/javascript"
-></script>
-      <!-- ===== CONTACT (HighLevel Embed) ===== -->
-      <section class="section section--muted" id="contact">
-        <div class="container">
-          <div class="section__head">
-            <h2>Send a quick note</h2>
-            <p class="lead">
-              If you’d rather message first, send the basics and we’ll reply with next steps.
+          <article class="card price">
+            <div class="price__head">
+              <h3>Launch Assist</h3>
+              <p class="muted">Full system + polish.</p>
+            </div>
+            <div class="price__tag">$997 setup</div>
+            <ul class="checklist">
+              <li>All Feature Boost items</li>
+              <li>Advanced follow-up rules</li>
+              <li>Lead routing + tags</li>
+              <li>Reporting + QA checklist</li>
+            </ul>
+            <a class="btn btn--ghost btn--full" href="#book">Book a call</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="muted">Built by a carpenter who got tired of watching good leads go cold.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__copy">
+            <p class="muted">
+              Blue Current Co helps trades and small construction businesses capture more leads with simple automation:
+              missed-call texts, fast follow-ups, and scheduling links that reduce friction.
+            </p>
+            <p class="muted">
+              The goal is straightforward: fewer missed opportunities, more booked estimates, and more time back for your work and life.
             </p>
           </div>
 
-          <div class="contact">
-            <div class="card--tight">
-              <h3 style="margin-top:0;">What to include</h3>
-              <ul class="bullets">
-                <li>Your trade (carpenter, handyman, GC, etc.)</li>
-                <li>Your service area</li>
-                <li>How leads come in (calls, website, Facebook, etc.)</li>
-                <li>Where you think you’re losing jobs</li>
-              </ul>
+          <div class="about__stats">
+            <div class="stat">
+              <div class="stat__num">10 min</div>
+              <div class="stat__label">strategy call</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Fast</div>
+              <div class="stat__label">setup cycles</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Simple</div>
+              <div class="stat__label">rules & workflows</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="contact__meta">
-                <div><strong>Fastest:</strong> call or text</div>
-                <div class="muted">
-                  <a href="tel:8482461414">848-246-1414</a>
-                </div>
-              </div>
+    <!-- ===== BOOK ===== -->
+    <section class="section" id="book">
+      <div class="container">
+        <div class="section__head">
+          <h2>Book a 10-min strategy call</h2>
+          <p class="muted">Pick a time — we’ll map your lead flow and recommend the cleanest fix.</p>
+        </div>
 
-              <div class="divider"></div>
+        <div class="card book__card">
+          <!-- Replace this with your booking iframe if you want it embedded on the page -->
+          <p class="muted">
+            If you want the calendar embedded here, paste the booking embed and I’ll wire it in like your “Strategy Call” widget.
+          </p>
+        </div>
+      </div>
+    </section>
 
-              <!-- ✅ COMPLIANCE COPY (added) -->
-              <div class="card--tight" style="margin-top:12px;">
-                <p class="tiny muted" style="margin:0 0 8px 0;">
-                  <strong>SMS consent:</strong> If you provide a phone number, you may choose to opt in to text updates
-                  related to your inquiry and our services. Consent is not a condition of purchase.
-                </p>
-                <ul class="bullets tiny" style="margin:0;">
-                  <li>Message frequency varies.</li>
-                  <li>Msg &amp; data rates may apply.</li>
-                  <li>Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help.</li>
-                </ul>
-                <p class="tiny muted" style="margin-top:10px;">
-                  See:
-                  <a href="./privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
-                  and
-                  <a href="./terms.html" target="_blank" rel="noopener">Terms of Service</a>.
-                </p>
-              </div>
-              <!-- ✅ end compliance copy -->
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Send a quick note</h2>
+          <p class="muted">If you’d rather message first, send the basics and we’ll reply with next steps.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3>What to include</h3>
+            <ul class="mini">
+              <li>Your trade (carpenter, handyman, GC, etc.)</li>
+              <li>Your service area</li>
+              <li>How leads come in (calls, website, Facebook, etc.)</li>
+              <li>Where you think you’re losing jobs</li>
+            </ul>
+
+            <div class="contact__fastest">
+              <div class="muted tiny">Fastest:</div>
+              <div class="contact__phone">call or text<br /><a href="tel:+18482461414">848-246-1414</a></div>
             </div>
 
-            <div style="width:100%;min-height:650px;">
+            <p class="muted tiny">
+              SMS consent: If you provide a phone number, you may choose to opt in to text updates related to your inquiry and our services.
+              Consent is not a condition of purchase.
+              <br /><br />
+              • Message frequency varies.<br />
+              • Msg & data rates may apply.<br />
+              • Reply STOP to opt out, HELP for help.<br /><br />
+              See: <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Service</a>.
+            </p>
+          </div>
+
+          <div class="form">
+            <!-- GHL Form Embed (Send a quick note) -->
+            <div class="form-embed" aria-label="Send a quick note">
               <iframe
-                src="https://api.leadconnectorhq.com/widget/form/VejzoXeUHjny9KgfS6eQ"
-                style="width:100%;height:650px;border:none;border-radius:8px"
-                id="inline-VejzoXeUHjny9KgfS6eQ"
+                src="https://api.leadconnectorhq.com/widget/form/iFNiK1wWDxFMgv02owIW"
+                id="inline-iFNiK1wWDxFMgv02owIW"
+                title="Send a quick note"
+                scrolling="no"
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"
                 data-trigger-value=""
@@ -533,48 +334,31 @@
                 data-activation-value=""
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
-                data-form-name="Contact Us"
-                data-height="650"
-                data-layout-iframe-id="inline-VejzoXeUHjny9KgfS6eQ"
-                data-form-id="VejzoXeUHjny9KgfS6eQ"
-                title="Contact Us"
+                data-form-name="Form 3"
+                data-height="605"
+                data-layout-iframe-id="inline-iFNiK1wWDxFMgv02owIW"
+                data-form-id="iFNiK1wWDxFMgv02owIW"
               ></iframe>
-
-              <!-- ✅ extra small note below form (added) -->
-              <p class="tiny muted" style="margin-top:10px;">
-                By submitting this form, you agree to be contacted about your request. If you opt in to SMS,
-                you can reply STOP anytime to unsubscribe.
-              </p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="container footer__inner">
-        <div>© <span id="year"></span> Blue Current Co.</div>
-
+        <div class="muted tiny">© <span id="year"></span> Blue Current Co</div>
         <div class="footer__links">
-          <a href="mailto:keith@bluecurrentco.com">keith@bluecurrentco.com</a>
-          <span class="dot">•</span>
-          <a href="tel:8482461414">848-246-1414</a>
-          <span class="dot">•</span>
-          <a href="./privacy.html">Privacy</a>
-          <span class="dot">•</span>
-          <a href="./terms.html">Terms</a>
-        </div>
-      </div>
-
-      <div class="container footer__sub">
-        <div class="muted">
-          Blue Current Services LLC (DBA: Blue Current Co) • 1024 6th Ave, Wall Township, NJ • Always in motion.
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
         </div>
       </div>
     </footer>
 
-    <script src="./script.js"></script>
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
