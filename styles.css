@@ -336,6 +336,14 @@ a:hover{ text-decoration: underline; }
 }
 .contact__phone a{ color: var(--accent); }
 
+.sms-compliance {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  margin-top: 10px;
+}
+.sms-compliance a {
+  color: var(--accent);
+}
 .form{
   border-radius: 22px;
   border: 1px solid rgba(255,255,255,.10);
