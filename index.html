@@ -1,195 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Missed Call Text Back for Contractors | Blue Current Co</title>
-
-<meta name="description" content="Stop losing contractor leads when you miss a call. Blue Current installs missed-call text-back and follow-up systems so contractors stop leaking revenue.">
-
-<link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
-
-<header class="nav">
-<div class="container nav__inner">
-
-<div class="brand">
-<div class="brand__mark">BC</div>
-<div>
-<div class="brand__name">Blue Current Co</div>
-<div class="brand__tag">Contractor Revenue Systems</div>
-</div>
-</div>
-
-<nav class="nav__links">
-<a href="#problem">Problem</a>
-<a href="#system">System</a>
-<a href="#demo">Demo</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<div class="nav__cta">
-<a class="btn btn--ghost" href="tel:+18482461414">Call</a>
-<a class="btn btn--primary" href="#contact">Book Call</a>
-</div>
-
-</div>
-</header>
-
-<section class="hero">
-
-<div class="container hero__grid">
-
-<div>
-
-<h1>Stop Losing Leads When You Miss a Call</h1>
-
-<p class="lead">
-Most contractors miss calls while working. Blue Current installs a system that replies instantly and keeps the lead moving.
-</p>
-
-<div class="hero__actions">
-<a class="btn btn--primary" href="#contact">Book a 10-minute call</a>
-<a class="btn btn--ghost" href="#system">See the system</a>
-</div>
-
-</div>
-
-<div class="hero__card">
-
-<h3>What gets installed</h3>
-
-<ul class="checklist">
-<li>Missed call text-back</li>
-<li>After hours reply</li>
-<li>Lead follow up</li>
-<li>Booking link</li>
-<li>Pipeline tracking</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="problem" class="section">
-
-<div class="container">
-
-<h2>The reality</h2>
-
-<p class="muted">
-Most calls come in while you're:
-</p>
-
-<ul class="bullets">
-<li>on a ladder</li>
-<li>cutting material</li>
-<li>driving between jobs</li>
-<li>talking with a customer</li>
-</ul>
-
-<p class="muted">
-When the call is missed, the customer usually calls the next contractor.
-</p>
-
-</div>
-
-</section>
-
-<section id="system" class="section section--alt">
-
-<div class="container">
-
-<h2>What the system does</h2>
-
-<div class="grid grid--3">
-
-<div class="card">
-<h3>Missed Call Recovery</h3>
-<p>When you miss a call the system replies instantly.</p>
-</div>
-
-<div class="card">
-<h3>Lead Capture</h3>
-<p>Every lead is saved so nothing gets lost.</p>
-</div>
-
-<div class="card">
-<h3>Booking</h3>
-<p>Customers can schedule a time to talk.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="demo" class="section">
-
-<div class="container">
-
-<h2>Try the system</h2>
-
-<p class="lead">
-Call this number and hang up.
-</p>
-
-<p class="lead">
-If the system is working you will receive an automatic text back.
-</p>
-
-<h2>(848) 246-1414</h2>
-
-</div>
-
-</section>
-
-<section id="contact" class="section section--alt">
-
-<div class="container">
-
-<h2>Book a quick call</h2>
-
-<div class="hero__actions">
-
-<a class="btn btn--primary"
-href="https://api.leadconnectorhq.com/widget/booking/3xIjQHhsnJEgyxwOATMp"
-target="_blank">
-Open scheduler
-</a>
-
-<a class="btn btn--ghost" href="tel:+18482461414">
-Call or text
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-
-<div class="container footer__inner">
-
-<div>© <span id="year"></span> Blue Current Co</div>
-
-<div class="footer__links">
-<a href="./privacy.html">Privacy</a>
-<a href="./terms.html">Terms</a>
-</div>
-
-</div>
-
-</footer>
-
-<script src="./script.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Missed Call Text Back for Contractors | Blue Current Co</title>
+    <meta
+      name="description"
+      content="Blue Current installs missed-call text-back and follow-up systems for contractors so leads do not disappear when the phone is missed on the job."
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body id="top">
+    <!-- ===== NAV ===== -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="Blue Current Co">
+          <div class="brand__mark" aria-hidden="true">BC</div>
+          <div class="brand__text">
+            <div class="brand__name">Blue Current Co</div>
+            <div class="brand__tag">Lead systems for contractors</div>
+          </div>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#problem">The problem</a>
+          <a href="#system">What it does</a>
+          <a href="#demo">See it work</a>
+          <a href="#book">Book</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav__cta">
+          <a class="btn btn--ghost" href="tel:+18482461414">Call (848) 246-1414</a>
+          <a class="btn btn--primary" href="#book">Book 10-min call</a>
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="nav__mobile" id="mobileNav" hidden>
+        <div class="container nav__mobileInner">
+          <a href="#problem">The problem</a>
+          <a href="#system">What it does</a>
+          <a href="#demo">See it work</a>
+          <a href="#book">Book</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--primary btn--full" href="tel:+18482461414">Call now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <main class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div>
+            <div class="pill">Built for contractors • missed-call recovery • follow-up that actually gets used</div>
+
+            <h1>Stop losing leads when you miss a call.</h1>
+
+            <p class="lead">
+              Most contractors miss calls while they are on a ladder, cutting material, driving between jobs,
+              or talking with a customer. Blue Current installs a simple system that replies fast and keeps
+              the lead moving.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#book">Book a 10-minute call</a>
+              <a class="btn btn--ghost" href="#demo">See the system in action</a>
+              <a class="btn btn--ghost" href="tel:+18482461414">Tap to call</a>
+            </div>
+
+            <div class="trust">
+              <div class="trust__item"><span class="dot"></span> Built by a 4th-generation carpenter</div>
+              <div class="trust__item"><span class="dot"></span> Simple enough to actually use</div>
+              <div class="trust__item"><span class="dot"></span> Designed around missed-call recovery</div>
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="What gets installed">
+            <div class="card__badge">What gets installed</div>
+            <div class="card__title">A practical lead-handling system for busy contractors</div>
+
+            <ul class="checklist">
+              <li>Missed-call text-back</li>
+              <li>After-hours auto reply</li>
+              <li>Form lead follow-up</li>
+              <li>Booking link + reminders</li>
+              <li>Pipeline tracking + notifications</li>
+            </ul>
+
+            <a class="btn btn--primary btn--full" href="#book">Book the 10-minute call</a>
+
+            <p class="tiny">
+              No new office manager. No complicated software stack. Just a cleaner way to handle leads you are already getting.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== PROBLEM ===== -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section__head">
+          <h2>The problem is not usually lead volume.</h2>
+          <p class="muted">
+            It is what happens after the phone rings.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>You miss calls while working</h3>
+            <p class="muted">
+              That is normal. You are on a job, in a crawl space, on a saw, on a ladder, or driving.
+              The problem is the lead usually moves on before you get back to them.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Follow-up becomes inconsistent</h3>
+            <p class="muted">
+              Good contractors lose work simply because the response was slow, forgotten, or buried in texts and voicemails.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Small leaks turn into real money</h3>
+            <p class="muted">
+              One missed kitchen, bath, deck, trim, or handyman lead can cover months of a system like this.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOUNDER ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>Why Blue Current exists</h2>
+          <p class="muted">
+            This was built from inside the trades, not from a marketing office.
+          </p>
+        </div>
+
+        <div class="about-block">
+          <div class="about-block__copy">
+            <p>
+              Blue Current was built after seeing the same pattern over and over:
+              solid contractors doing good work, but still losing jobs because they could not answer the phone in the middle of the day.
+            </p>
+            <p>
+              The issue usually is not work ethic. It is that most small contractors do not have a practical system for handling incoming leads while they are actually working.
+            </p>
+            <p>
+              Blue Current exists to fix that without making the whole business feel complicated.
+            </p>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-card__text">
+              Built by a 4th-generation carpenter for contractors who are too busy to babysit leads.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SYSTEM ===== -->
+    <section class="section" id="system">
+      <div class="container">
+        <div class="section__head">
+          <h2>What the system does</h2>
+          <p class="muted">
+            It is straightforward. If someone reaches out, they get handled quickly and the lead does not disappear.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <h3>Someone calls and you miss it</h3>
+              <p class="muted">
+                Instead of going cold, the lead gets an immediate text-back.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <h3>The lead can reply or book a time</h3>
+              <p class="muted">
+                They can keep the conversation going or grab a short callback slot.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <h3>The lead gets saved and tracked</h3>
+              <p class="muted">
+                Everything lands in one place so nothing slips through the cracks.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step__num">4</div>
+            <div class="step__body">
+              <h3>You follow up without chaos</h3>
+              <p class="muted">
+                Reminders, replies, and booking stay organized instead of living in your head.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--3 top-gap">
+          <article class="card">
+            <h3>Missed Call Recovery</h3>
+            <p class="muted">
+              Miss a call and the lead gets a fast, practical reply instead of hearing nothing.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>After-Hours Reply</h3>
+            <p class="muted">
+              If someone reaches out at night, the system acknowledges it and gives them a next step.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Booking + Reminders</h3>
+            <p class="muted">
+              Short callback slots and reminders help keep conversations moving without a lot of back and forth.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Form Lead Follow-Up</h3>
+            <p class="muted">
+              Website inquiries get a real response path instead of sitting unanswered.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Pipeline Tracking</h3>
+            <p class="muted">
+              Every lead lands in one place so you know what needs attention.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Internal Notifications</h3>
+            <p class="muted">
+              You know when someone books, replies, or reaches out, without constantly checking.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEXT EXAMPLE ===== -->
+    <section class="section section--alt" id="example">
+      <div class="container">
+        <div class="section__head">
+          <h2>What a missed call actually looks like</h2>
+          <p class="muted">
+            This is the part most contractors understand immediately.
+          </p>
+        </div>
+
+        <div class="conversation">
+          <div class="bubble bubble--system">
+            Sorry we missed your call. What project are you looking to get done?
+          </div>
+
+          <div class="bubble bubble--reply">
+            Need a deck repair estimate.
+          </div>
+
+          <div class="bubble bubble--system">
+            Got it. If it is easier, you can grab a quick 10-minute time here and I will call you back.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO ===== -->
+    <section class="section" id="demo">
+      <div class="container">
+        <div class="section__head">
+          <h2>Try the system yourself</h2>
+          <p class="muted">
+            No sales pitch needed. Just test it.
+          </p>
+        </div>
+
+        <div class="demo-card">
+          <h3>Call this number and let it ring out</h3>
+          <p class="muted">
+            If the system is live and working, you should receive an automatic text back.
+          </p>
+
+          <div class="demo-card__number">
+            <a href="tel:+18482461414">(848) 246-1414</a>
+          </div>
+
+          <div class="hero__actions hero__actions--center">
+            <a class="btn btn--primary" href="tel:+18482461414">Call now</a>
+            <a class="btn btn--ghost" href="#book">Book a short walkthrough</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING ===== -->
+    <section class="section section--alt" id="book">
+      <div class="container">
+        <div class="section__head">
+          <h2>Book a 10-minute call</h2>
+          <p class="muted">
+            Quick and practical. Tell me where leads are slipping through and I will show you the cleanest fix.
+          </p>
+        </div>
+
+        <div class="book__card">
+          <p class="muted" style="margin-top: 0;">
+            Option 1: open the scheduler in a new tab.
+          </p>
+
+          <div class="hero__actions" style="margin-top: 10px;">
+            <a
+              class="btn btn--primary"
+              href="https://api.leadconnectorhq.com/widget/booking/3xIjQHhsnJEgyxwOATMp"
+              target="_blank"
+              rel="noopener"
+            >
+              Open scheduler
+            </a>
+            <a class="btn btn--ghost" href="#contact">Or send a message</a>
+          </div>
+
+          <details class="booking-details">
+            <summary class="muted">Option 2: book right here</summary>
+            <div class="form-embed" style="margin-top: 12px;">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/booking/3xIjQHhsnJEgyxwOATMp"
+                scrolling="no"
+                title="Blue Current Co booking widget"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </details>
+
+          <p class="tiny" style="margin-bottom: 0;">
+            Short call. Straight answer. No pressure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">
+            Call, text, or send a quick note. If you are working, keep it simple.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div>
+            <div class="card">
+              <h3 style="margin-top: 0;">Fastest option</h3>
+              <p class="muted" style="margin-bottom: 0;">
+                Call or text and we will keep it simple.
+              </p>
+
+              <div class="contact__fastest">
+                <div class="tiny">Call / Text</div>
+                <div class="contact__phone"><a href="tel:+18482461414">(848) 246-1414</a></div>
+              </div>
+            </div>
+
+            <div class="card top-gap">
+              <h3 style="margin-top: 0;">Good fit for Blue Current</h3>
+              <p class="muted" style="margin-bottom: 0;">
+                Remodelers, carpenters, handymen, roofers, painters, landscapers, plumbers, HVAC,
+                electricians, and other service businesses that lose leads because response is inconsistent.
+              </p>
+            </div>
+          </div>
+
+          <div class="form" aria-label="Message Blue Current Co">
+            <h3 style="margin-top: 0;">Send a quick note</h3>
+
+            <div class="sms-compliance">
+              <p>
+                Blue Current Services LLC may contact you via SMS regarding your inquiry.
+                Message frequency varies. Message &amp; data rates may apply.
+                Reply STOP to opt out. Reply HELP for assistance.
+              </p>
+              <p>
+                By submitting this form, you agree to our
+                <a href="./privacy.html">Privacy Policy</a> and
+                <a href="./terms.html">Terms of Service</a>.
+              </p>
+            </div>
+
+            <div class="form-embed" aria-label="Send a quick note form">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/iFNiK1wWDxFMgv02owIW"
+                id="inline-iFNiK1wWDxFMgv02owIW"
+                title="Send a quick note"
+                style="width: 100%; height: 605px; border: none; border-radius: 12px; overflow: hidden;"
+                scrolling="no"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="muted tiny">© <span id="year"></span> Blue Current Co. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="./privacy.html">Privacy</a>
+          <a href="./terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+  </body>
 </html>
