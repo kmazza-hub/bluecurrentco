@@ -132,9 +132,10 @@ a:hover {
 }
 
 .brand__logo {
-  height: auto;
   width: 220px;
+  height: auto;
   display: block;
+  mix-blend-mode: screen;
 }
 
 .nav__links {
