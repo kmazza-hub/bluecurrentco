@@ -70,3 +70,41 @@
     observer.observe(item);
   });
 })();
+
+// hero cursor glow
+(() => {
+  const hero = document.getElementById("hero");
+  const glow = document.getElementById("heroGlow");
+
+  if (!hero || !glow || window.matchMedia("(pointer: coarse)").matches) return;
+
+  let currentX = 0;
+  let currentY = 0;
+  let targetX = 0;
+  let targetY = 0;
+
+  const animate = () => {
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
+    glow.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    requestAnimationFrame(animate);
+  };
+
+  hero.addEventListener("mousemove", (e) => {
+    const rect = hero.getBoundingClientRect();
+    targetX = e.clientX - rect.left - glow.offsetWidth / 2;
+    targetY = e.clientY - rect.top - glow.offsetHeight / 2;
+  });
+
+  hero.addEventListener("mouseleave", () => {
+    targetX = hero.offsetWidth * 0.45 - glow.offsetWidth / 2;
+    targetY = hero.offsetHeight * 0.35 - glow.offsetHeight / 2;
+  });
+
+  targetX = hero.offsetWidth * 0.45 - glow.offsetWidth / 2;
+  targetY = hero.offsetHeight * 0.35 - glow.offsetHeight / 2;
+  currentX = targetX;
+  currentY = targetY;
+
+  animate();
+})();
