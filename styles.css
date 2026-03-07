@@ -205,16 +205,31 @@ a:hover {
 }
 
 .brand__logo {
-  width: 150px;
+  width: 210px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 0 18px rgba(31, 199, 208, 0.12));
-  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+
+  filter: drop-shadow(0 0 22px rgba(31, 199, 208, 0.18));
+
+  transition: transform 0.25s ease,
+              filter 0.25s ease,
+              opacity 0.25s ease;
 }
 
 .brand:hover .brand__logo {
-  transform: translateY(-1px) scale(1.02);
-  filter: drop-shadow(0 0 26px rgba(31, 199, 208, 0.22));
+  transform: translateY(-1px) scale(1.05);
+
+  filter: drop-shadow(0 0 32px rgba(31, 199, 208, 0.28));
+}
+
+.brand__logo {
+  animation: logoFloat 6s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
 }
 
 .nav__links {
