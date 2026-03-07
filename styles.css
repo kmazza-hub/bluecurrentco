@@ -45,9 +45,9 @@ body {
   pointer-events: none;
   background-image: url("./logo.png");
   background-repeat: no-repeat;
-  background-position: center 220px;
-  background-size: min(1400px, 92vw);
-  opacity: 0.09;
+  background-position: center 78vh;
+  background-size: min(900px, 70vw);
+  opacity: 0.03;
   z-index: 0;
 }
 
@@ -121,20 +121,21 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
-  gap: 16px;
+  padding: 12px 0;
+  gap: 20px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  min-width: 0;
+  min-width: 180px;
 }
 
 .brand__logo {
-  height: 96px;
+  height: 72px;
   width: auto;
   display: block;
+  opacity: 0.95;
 }
 
 .nav__links {
