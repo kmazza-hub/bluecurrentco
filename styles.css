@@ -45,9 +45,9 @@ body {
   pointer-events: none;
   background-image: url("./logo.png");
   background-repeat: no-repeat;
-  background-position: center 180px;
-  background-size: min(720px, 70vw);
-  opacity: 0.045;
+  background-position: center 240px;
+  background-size: min(1200px, 90vw);
+  opacity: 0.05;
   z-index: 0;
 }
 
