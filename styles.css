@@ -188,7 +188,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 0;
+  padding: 14px 0;
   gap: 16px;
   min-height: 58px;
   transition: min-height 0.25s ease, padding 0.25s ease;
@@ -205,21 +205,19 @@ a:hover {
 }
 
 .brand__logo {
-  width: 210px;
+  width: 240px;
   height: auto;
   display: block;
 
-  filter: drop-shadow(0 0 22px rgba(31, 199, 208, 0.18));
+  filter: drop-shadow(0 0 20px rgba(31,199,208,0.18));
 
   transition: transform 0.25s ease,
-              filter 0.25s ease,
-              opacity 0.25s ease;
+              filter 0.25s ease;
 }
 
 .brand:hover .brand__logo {
-  transform: translateY(-1px) scale(1.05);
-
-  filter: drop-shadow(0 0 32px rgba(31, 199, 208, 0.28));
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 0 32px rgba(31,199,208,0.28));
 }
 
 .brand__logo {
@@ -522,6 +520,26 @@ a:hover {
 .hero__content {
   position: relative;
   z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+
+  right: -120px;
+  bottom: -80px;
+
+  width: 720px;
+  height: 720px;
+
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.05;
+
+  pointer-events: none;
 }
 
 .pill {
