@@ -35,7 +35,6 @@
     });
   }
 
-  // header shrink on scroll
   const nav = document.querySelector(".nav");
   const onScroll = () => {
     if (!nav) return;
@@ -48,7 +47,6 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // reveal on scroll
   const revealItems = document.querySelectorAll(
     ".card, .hero__card, .step, .demo-card, .quote-card, .about-block__copy, .conversation .bubble, .section__head"
   );
@@ -71,7 +69,6 @@
   });
 })();
 
-// hero cursor glow
 (() => {
   const hero = document.getElementById("hero");
   const glow = document.getElementById("heroGlow");
