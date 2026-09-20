@@ -23,3 +23,10 @@ This is a complete static website package. Upload the **contents of this folder*
 4. Confirm the received message in the hosting provider’s form dashboard and inbox.
 
 The dashboards and metrics on the public page remain clearly described as illustrative demonstration data.
+
+## Pilot agreement workflow
+
+- `/pilot-agreement` provides a public explanation of the eleven-document pilot packet.
+- The `pilot-agreement-request` Netlify form collects restaurant and authorized-signer information.
+- Submissions redirect to `/pilot-request-received` and do not create a contract or launch a pilot.
+- A secure e-signature provider must be connected before direct signature requests can be issued from the site.
