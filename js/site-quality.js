@@ -61,11 +61,11 @@
 
   const guestDialog = createDialog("hostGuestDialog", "Find a guest", `
     <label for="hostGuestLookup">Name, phone, or email</label>
-    <input id="hostGuestLookup" type="search" placeholder="Try Anthony Russo" autocomplete="off">
+    <input id="hostGuestLookup" type="search" placeholder="Try Frank" autocomplete="off">
     <div class="bc-guest-results" id="hostGuestLookupResults"></div>`);
 
   const guestRecords = [
-    { name: "Anthony Russo", detail: "Party of 4 · Birthday · 7:30 PM", note: "Waterfront preference · Tree nut allergy" },
+    { name: "Frank", detail: "Party of 4 · Birthday · 7:30 PM", note: "Waterfront preference · Tree nut allergy" },
     { name: "Melissa Grant", detail: "Party of 2 · Anniversary · 7:15 PM", note: "Premier guest · Quiet table" },
     { name: "Priya Shah", detail: "Party of 4 · Waitlist", note: "High chair requested" }
   ];
@@ -276,7 +276,7 @@
 
   const allReservationsDialog = createDialog("allReservationsDialog", "Upcoming reservations", `
     <div class="bc-guest-results">
-      <button type="button" data-reservation="Anthony Russo"><strong>7:30 · Anthony Russo</strong><span>Party of 4 · Birthday · Waterfront</span><small>Confirmed</small></button>
+      <button type="button" data-reservation="Frank"><strong>7:30 · Frank</strong><span>Party of 4 · Birthday · Waterfront</span><small>Confirmed</small></button>
       <button type="button" data-reservation="Melissa Grant"><strong>7:45 · Melissa Grant</strong><span>Party of 2 · Anniversary · Window</span><small>Arrived</small></button>
       <button type="button" data-reservation="Daniel Cho"><strong>8:00 · Daniel Cho</strong><span>Party of 6 · Main room</span><small>Confirmed</small></button>
       <button type="button" data-reservation="Sofia Patel"><strong>8:15 · Sofia Patel</strong><span>Party of 3 · Quiet table</span><small>Confirmed</small></button>
