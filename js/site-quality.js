@@ -21,10 +21,10 @@
     statusTimer = window.setTimeout(() => status.classList.remove("show"), 3200);
   }
 
-  const heroLocations = ["Marina Grille", "The Wharfside", "Rod's Tavern", "Captain's Inn"];
+  const heroLocations = ["The Wharfside", "Marina Grille", "Rod's Tavern", "Captain's Inn"];
   const heroLocationDetails = {
+    "The Wharfside": ["WS", "Point Pleasant Beach · Waterfront dining"],
     "Marina Grille": ["MG", "Belmar · Waterfront dining"],
-    "The Wharfside": ["WS", "Coastal dining · Dinner service"],
     "Rod's Tavern": ["RT", "Neighborhood tavern · Dinner service"],
     "Captain's Inn": ["CI", "Harbor dining · Dinner service"]
   };
@@ -247,7 +247,7 @@
   }));
 
   function downloadOperatorReport() {
-    const location = $(".operator-location-tabs button.active")?.dataset.location || "Marina Grille";
+    const location = $(".operator-location-tabs button.active")?.dataset.location || "The Wharfside";
     const content = [
       "BLUE CURRENT — OPERATOR REPORT",
       `Location: ${location}`,
